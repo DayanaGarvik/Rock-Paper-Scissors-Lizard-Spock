@@ -22,10 +22,8 @@
 
 # Import random to let the computer make random choices.
 
-
 import random
 import getpass
-
 
 # Invitation to play the game.
 # First ask if the player wants to play
@@ -68,7 +66,6 @@ def invite():
             print("\nAs you wish. Have a nice day!")
             break
 
-
 # Single player mode
 def play():
     continue_playing = True
@@ -79,8 +76,7 @@ def play():
 
         # First check if it's a tie:
         if player_choice.lower() == comp_choice.lower():
-            print("It's a tie! Try again!")
-
+            print("It's a tie! Try again!")        
         # Then use nested if statements. Check every possible players choice against every possible comp. choice.
         elif player_choice == "rock".lower():
             if comp_choice == "Scissors":
@@ -127,16 +123,13 @@ def play():
                 print("You lose! Your Spock was disproved by my Paper!", "\n", "This is fun! Let's try again!")
             if comp_choice == "Lizard":
                 print("You lose! Your Spock was poisoned by my Lizard!", "\n", "This is fun! Let's try again!")
-
       # If the player wants to quit:
         elif player_choice == "Q".lower():
             print("Ok. It was fun playing with you! Have a nice day!")
             break
-
        # If the player write something else, which is not part of the game, or with spelling mistakes:
         else:
             print("I didn't understand your choice!")
-
 
 # Two player mode:
 def play_2():
@@ -230,7 +223,6 @@ def questions():
         print("Ok. Hope you had fun!")
         print("You had", correct_ans, "correct answers out of", total_ans)
         exit()
-
     # Second question
     q2 = str(input("Sir Isaac Newton was only 23 when he discovered gravity! True or False? "))
     if q2 == "True".lower():
@@ -247,7 +239,6 @@ def questions():
         print("Ok. Hope you had fun!")
         print("You had", correct_ans, "correct answers out of", total_ans)
         exit()
-
     # Third question
     q3 = str(input("25% of people are left handed. True or False? "))
     if q3 == "True".lower():
@@ -264,7 +255,6 @@ def questions():
         print("Ok. Hope you had fun!")
         print("You had", correct_ans, "correct answers out of", total_ans)
         exit()
-
     # Fourth question
     q4 = str(input("Virginia Woolf wrote all her books in bed. True or False? "))
     if q4 == "True".lower():
@@ -281,7 +271,6 @@ def questions():
         print("Ok. Hope you had fun!")
         print("You had", correct_ans, "correct answers out of", total_ans)
         exit()
-
     # Fifth question
     q5 = str(input("Grasshoppers have white blood. True or False? "))
     if q5 == "True".lower():
